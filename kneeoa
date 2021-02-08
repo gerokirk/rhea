@@ -1,3 +1,12 @@
+* create new full kneee oa dataset without formating on the blaseline variable;
+data long.newknoa;
+set long.rhea;
+baselinevisit=blxrvis;
+pain30day=y5kp30da;
+typeofkneepain=y2knpain;
+run;
+
+
 data bl3 bl2;
 set rhea.beforesplit (keep= v1 v2 v3 v4);
 
