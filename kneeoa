@@ -1,0 +1,6 @@
+data bl3 bl2;
+set rhea.beforesplit (keep= v1 v2 v3 v4);
+
+if baselinevisit=2 then output; out bl2;
+if baselinevisit=3 then output; out bl3;
+run;
