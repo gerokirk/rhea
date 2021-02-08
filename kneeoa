@@ -4,11 +4,12 @@ set long.rhea;
 baselinevisit=blxrvis;
 pain30day=y5kp30da;
 typeofkneepain=y2knpain;
+drop blxrvis y5kp30da y2knpain;
 run;
 
 
 data bl3 bl2;
-set rhea.beforesplit (keep= v1 v2 v3 v4);
+set rhea.beforesplit (keep= baselinevisit v1 v2 v3 v4);
 
 if baselinevisit=2 then output bl2;
 if baselinevisit=3 then output bl3;
